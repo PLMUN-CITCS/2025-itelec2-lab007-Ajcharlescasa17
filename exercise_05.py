@@ -23,3 +23,6 @@ print(f"User number / 3  = {division:.2f}")
 print("\nMath Library Functions:")
 print(f"Square root of {user_number:.2f} is: {sqrt_value}")
 print(f"Sine of {user_number:.2f} degrees is: {sine_value}")
+
+# Debugging - Show output format
+print("\nDEBUG: Output format check complete.")
