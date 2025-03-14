@@ -1,7 +1,7 @@
 import math  # Import math module
 
 # Get numerical input from the user
-user_number = float(input("Enter a number to perform operations on: "))
+user_number = float(input("Enter a number to perform operations on: "))  # Ensure input prompt matches exactly
 
 # Perform arithmetic operations
 addition = user_number + 10
@@ -10,15 +10,10 @@ multiplication = user_number * 2
 division = user_number / 3
 
 # Use math library functions
-if user_number >= 0:
-    sqrt_value = f"{math.sqrt(user_number):.2f}"
-else:
-    sqrt_value = "Undefined"
-
+sqrt_value = f"{math.sqrt(user_number):.2f}" if user_number >= 0 else "Undefined"
 sine_value = f"{math.sin(math.radians(user_number)):.4f}"  # Convert degrees to radians for sine calculation
 
 # Display the results with exact formatting
-print("Enter a number to perform operations on:")
 print("\nArithmetic Operations:")
 print(f"User number + 10 = {addition:.2f}")
 print(f"User number - 5  = {subtraction:.2f}")
